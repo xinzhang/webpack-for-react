@@ -5,8 +5,12 @@ const port = process.env.PORT || 3000
 
 module.exports = {
     mode: 'development',
-    entry: './src/index.js',
+    entry: [
+      'react-hot-loader/patch', //active HMR for react
+      './src/index.js'
+    ],
     output: {
+        publicPath: '/', //hot reloading won't work wfor nested routes without it
         filename: 'bundle.[hash].js'
     },
     devtool: 'inline-source-map',
@@ -40,6 +44,7 @@ module.exports = {
         ]
     },
     plugins: [
+      new webpack.HotModuleReplacementPlugin(), //print hotmodule replacement info
       new htmlWebpackPlugin({
         template: 'public/index.html',
         favicon: 'public/favicon.ico'
@@ -48,6 +53,7 @@ module.exports = {
     devServer: {
       host: 'localhost',
       port: port,
+      hot: true,
       historyApiFallback: true,
       open: true,
       headers: {

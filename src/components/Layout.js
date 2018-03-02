@@ -9,13 +9,13 @@ const Layout = ({ children }) => {
     <Container>
       <Link to="/">
         <Header as="h1" className={h1}>
-          webpack-for-react-1
+          webpack-for-react
         </Header>
       </Link>
       {children}
       <Divider />
       <p className={pullRight}>
-        Made with <Icon name="heart" color="red" /> by Esau Silva
+        This is Made with <Icon name="heart" color="red" /> by Esau Silva
       </p>
     </Container>
   );
