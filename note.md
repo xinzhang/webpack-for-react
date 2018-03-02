@@ -5,4 +5,6 @@ yarn add babel-core babel-loader babel-preset-env babel-preset-react babel-prese
 
 yarn add react-hot-loader -D
 
+yarn add react-imported-component react-delay-render
+
 
