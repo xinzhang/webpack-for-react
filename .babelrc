@@ -1,0 +1,3 @@
+{
+    "presets": ["env", "reaact", "stage-1"]
+}
