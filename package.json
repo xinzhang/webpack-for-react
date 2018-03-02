@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -18,6 +21,7 @@
     "babel-preset-stage-1": "^6.24.1",
     "css-loader": "^0.28.10",
     "html-webpack-plugin": "webpack-contrib/html-webpack-plugin",
+    "react-hot-loader": "^4.0.0",
     "style-loader": "^0.20.2",
     "webpack": "^4.0.1",
     "webpack-cli": "^2.0.10",
